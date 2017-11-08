@@ -1,0 +1,69 @@
+:root {
+  --green-color: #85AD3E;
+  --orange-color: #FF891D;
+  --blue-color: #3A419A;
+  --light-blue-color: #D7E4E7;
+}
+
+body {
+  color: #8E8E8E;
+  font-size: 16px;
+  line-height: 24pt;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;  
+}
+
+.App-logo {
+  height: 80px;
+  float: left;
+}
+
+.top-header {
+  background-color: var(--light-blue-color);
+  height: 35px;
+  /* padding: 20px; */
+  /* color: white; */
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.sub-title {
+  font-size: .75rem;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-login {
+  color: var(--blue-color);
+  margin-right: 10px;
+}
+
+.nav-phone {
+  margin: 0 20px;
+}
+
+.nav-facebook {
+  height: 24px;
+}
+
+.enroll {
+  background-color: var(--green-color);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
