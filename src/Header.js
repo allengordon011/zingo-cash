@@ -23,8 +23,10 @@ class Header extends React.Component {
                 </ul>
               </div>
               <nav className="main-nav">
-                <div className="logo-top" alt="logo" />
                 <ul id="nav-list">
+                  <li>
+                    <div className="logo-top" alt="logo" />
+                  </li>
                   <li>
                     <a href="" className="second">INSTRUCTIONS</a>
                   </li>

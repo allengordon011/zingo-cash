@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StickyContainer, Sticky } from 'react-sticky';
+import Sticky from 'react-sticky-el';
 import './App.css';
 import Header from './Header.js'
 import facebook from './img/FB-f-Logo__blue_72.png';
@@ -10,24 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <StickyContainer>
-          <Sticky>
-          {
-          ({
-            style,
-            isSticky,
-            wasSticky,
-            distanceFromTop,
-            distanceFromBottom,
-            calculatedHeight
-          }) => {
-            return (
-                <Header />
-            )
-          }
-          }
-          </Sticky>
-
+            <Header />
           <div className="main">
             <div className="main-hero">
               <img src={hero} className="hero" alt="hero" />
@@ -70,10 +53,99 @@ class App extends Component {
                 <p className="sub-title-banner">Zingo Cash will work with you to find solutions to help you get past your current budget issues.</p>
               </div>
             </div>
-            <p style={{height:500}}> filler </p>
-
+            <div className="links">
+              <div className="links-logo-phone">
+                <div className="logo-bottom" alt="logo" />
+                <div className="links-phone">
+                  1-888-ZINGO-55
+                </div>
+              </div>
+              <div className="links-1">
+                <ul>
+                  <li>
+                    <a href="">Home</a>
+                  </li>
+                  <li>
+                    <a href="">Instructions</a>
+                  </li>
+                  <li>
+                    <a href="">Rates & Terms</a>
+                  </li>
+                  <li>
+                    <a href="">FAQ</a>
+                  </li>
+                  <br />
+                  <li>
+                    <a href="">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div className="links-2">
+                <ul>
+                  <li>
+                  <a href=""><b>Learn More</b></a>
+                  </li>
+                  <li>
+                    <a href="">Budget Tips</a>
+                  </li>
+                  <li>
+                    <a href="">Customer Loan Pamphlet</a>
+                  </li>
+                  <li>
+                    <a href="">Credit Resources</a>
+                  </li>
+                  <li>
+                    <a href="">Glossary of Terms</a>
+                  </li>
+                  <br />
+                </ul>
+              </div>
+              <div className="links-2">
+                <ul>
+                  <li>
+                    <a href=""><b>My Account</b></a>
+                  </li>
+                  <li>
+                    <a href="">Application History</a>
+                  </li>
+                  <li>
+                   <a href="">Payment History</a>
+                  </li>
+                  <li>
+                    <a href="">Personal Information</a>
+                  </li>
+                  <li>
+                    <a href="">Change Password</a>
+                  </li>
+                  <li>
+                    <a href="">Apply</a>
+                  </li>
+                  <li>
+                    <a href="">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="footer">
+              <ul id="footer-list">
+                <li>
+                  <a href="">PRIVATE NOTICE</a>
+                </li>
+                <li>
+                  <a href="">SECURITY</a>
+                </li>
+                <li>
+                  <a href="">TERMS OF USE</a>
+                </li>
+                <li>
+                  <a href="">CONSUMER LOAN PAMPHLET</a>
+                </li>
+                <li>
+                  <p>&copy;2011 ZINGO FINANCIAL, LLC. ALL RIGHTS RESERVED.</p>
+                </li>
+              </ul> 
+            </div>
           </div>
-        </StickyContainer>
       </div>
     );
   }
