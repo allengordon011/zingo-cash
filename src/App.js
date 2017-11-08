@@ -32,8 +32,10 @@ class App extends Component {
             <div className="main-hero">
               <img src={hero} className="hero" alt="hero" />
               <div className="hero-overlay">
-                <h1 className="title">We offer Loans for Bad Credit</h1>
-                <p className="sub-title">We specialize in loans for people with bad credit. Get a loan with Zingo Cash's quick loan process.</p>
+                <div className="hero-text">
+                  <h1 className="title">We offer <b>Loans</b> for Bad Credit</h1>
+                  <p className="sub-title">We specialize in loans for people with bad credit. Get a loan with Zingo Cash's quick loan process.</p>
+                </div>
                 <button className="enroll">ENROLL TODAY</button>
               </div>
             </div>
@@ -44,14 +46,17 @@ class App extends Component {
                   <div className="icon-enroll" alt="icon-enroll" />
                   <p className="icon-text">Enroll Today</p>
                 </li>
+                <div className="icon-arrow" alt="icon-arrow" />
                 <li>
                   <div className="icon-apply" alt="icon-apply" />
                   <p className="icon-text">Apply Online</p>
                 </li>
+                <div className="icon-arrow" alt="icon-arrow" />
                 <li>
                   <div className="icon-verification" alt="icon-verification" />
                   <p className="icon-text">Verification</p>
                 </li>
+                <div className="icon-arrow" alt="icon-arrow" />
                 <li>
                   <div className="icon-zingocash" alt="icon-zingocash" />
                   <p className="icon-text">Zingo Cash!</p>

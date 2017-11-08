@@ -14,15 +14,7 @@ body {
   line-height: 24pt;
 }
 
-/* .App {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;  
-  color: var(--body-color);
-  font-size: 16px;
-  line-height: 24pt;
-} */
-
-.logo-top, .icon-enroll, .icon-apply, .icon-verification, .icon-zingocash {
+.logo-top, .icon-enroll, .icon-apply, .icon-verification, .icon-zingocash, .icon-arrow {
   background: url('./img/Zingo-Cash-sprite.png');
   background-repeat: no-repeat;  
 }
@@ -33,6 +25,12 @@ body {
 	height: 97px;
   margin: 0 10px;
   transform: scale(0.7);
+}
+
+.logo-bottom {  
+  background-position: -329px -255px;;
+  width: 202px;
+	height: 127px;
 }
 
 .icon-enroll {
@@ -57,6 +55,14 @@ body {
   background-position: -939px -22px;
 	width: 192px;
 	height: 191px;
+}
+
+.icon-arrow {
+  background-position: -662px -257px;
+	width: 19px;
+  height: 23px;
+  align-self: center;
+  margin-top: -30px;
 }
 
 .top-header {
@@ -135,72 +141,106 @@ li p {
 }
 
 .hero-overlay {
-  background-color: var(--blue-color);
+  background-color: rgba(58, 65, 154, 0.85);
   z-index: 10;
   width: 100%;
   margin-top: -150px;
   position: absolute;
+  text-align: left;
+  color: white;
+  padding: 38px 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-text {
+  flex-direction: column; 
+  margin-left: 100px; 
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  margin: 0;
 }
 
 .sub-title {
   font-size: .75rem;
+  margin: 0;
+  
 }
 
 .enroll {
   background-color: var(--green-color);
+  width: 187px;
+  height: 44px;
   color: white;
+  align-self: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .process {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 15px auto;
+  margin: 75px auto;
+}
+
+.process h2 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  margin: 0 0 35px;
+  letter-spacing: 2px;
 }
 
 .icons-list {
   display: flex;
   flex-direction: row;
-  margin: 0 15px;
+}
+
+.icons-list li {
+  justify-content: space-between;
+  padding: 0 40px;
 }
 
 .icon-text {
   font-size: 1.25rem;
-  color: var(--green-color);
+  padding-top: 15px;
 }
 
 .bottom-banner {
-  display: flex;
   width: 100%;
 }
 
 .banner {
   width: 100%;
   z-index: 0;
+  margin: 0;  
 }
 
 .banner-overlay {
   z-index: 10;
-  width: 24%;
-  margin: 50px;
+  position: absolute;
+  margin-top: -250px;  
   text-align: left;
   color: white;
   align-self: center;
 }
 
 .title-banner {
-  margin: 0;
-  font-size: 1.5rem;
+  margin: 0 100px 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;  
 }
 
-.sub-title-banner p {
-  margin: 0;
+.sub-title-banner {
+  margin: 10px 100px 0;
+  width: 42%; 
+  line-height: 24px; 
 }
 
 a {
@@ -208,8 +248,16 @@ a {
   color: var(--body-color);
 }
 
+button {
+  border: none;
+}
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-weight: normal;  
 }
