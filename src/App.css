@@ -3,20 +3,26 @@
   --orange-color: #FF891D;
   --blue-color: #3A419A;
   --light-blue-color: #D7E4E7;
+  --body-color: #8E8E8E;
 }
 
 body {
-  color: #8E8E8E;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;  
+  color: var(--body-color);
   font-size: 16px;
   line-height: 24pt;
 }
 
-.App {
+/* .App {
   text-align: center;
   font-family: 'Open Sans', sans-serif;  
-}
+  color: var(--body-color);
+  font-size: 16px;
+  line-height: 24pt;
+} */
 
-.logo-top, .enroll-today, .verification, .zingo-cash {
+.logo-top, .icon-enroll, .icon-apply, .icon-verification, .icon-zingocash {
   background: url('./img/Zingo-Cash-sprite.png');
   background-repeat: no-repeat;  
 }
@@ -25,12 +31,115 @@ body {
   background-position: -57px -270px;
 	width: 155px;
 	height: 97px;
-  margin: 10px 10px 10px 100px;
+  margin: 0 10px;
+  transform: scale(0.7);
 }
 
-header {
+.icon-enroll {
+  background-position: -39px -22px;
+	width: 192px;
+	height: 191px;
+}
+
+.icon-apply {
+  background-position: -339px -22px;
+	width: 192px;
+	height: 191px;
+}
+
+.icon-verification {
+  background-position: -641px -23px;
+	width: 191px;
+	height: 190px;
+}
+
+.icon-zingocash {
+  background-position: -939px -22px;
+	width: 192px;
+	height: 191px;
+}
+
+.top-header {
   background-color: var(--light-blue-color);
   height: 32px;
+}
+
+#top-header-list {
+  display: flex;
+  justify-content: flex-end;
+  font-size: .65rem;
+  font-weight: bold;  
+  margin: 0 100px 0 0;
+}
+
+li p {
+  margin: 0 5px;
+}
+
+.login {
+  color: var(--green-color);
+  margin-right: 30px;
+}
+
+.phone {
+  margin: 0 20px;
+}
+
+.facebook {
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 50px;
+}
+
+#nav-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15px;
+}
+
+#nav-list li {
+  margin: 0 15px;
+}
+
+#nav-list button {
+  background-color: var(--orange-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 148px;
+  height: 40px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-hero {
+  /* display: flex; */
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  z-index: 0;
+  margin: 0;
+}
+
+.hero-overlay {
+  background-color: var(--blue-color);
+  z-index: 10;
+  width: 100%;
+  margin-top: -150px;
+  position: absolute;
 }
 
 .title {
@@ -41,42 +150,62 @@ header {
   font-size: .75rem;
 }
 
-#top-header-list {
-  display: flex;
-  justify-content: flex-end;
-  font-size: .65rem;
-  margin: 0 100px 0 0;
-}
-
-.login {
-  color: var(--blue-color);
-  margin-right: 10px;
-  font-weight: bold;
-}
-
-.phone {
-  margin: 0 20px;
-}
-
-.facebook {
-  height: 20px;
-  vertical-align: middle;
-}
-
-#nav-list {
-  display: flex;
-  /* justify-content: flex-end; */
-  /* font-size: .65rem; */
-  margin: 0 100px;
-}
-
 .enroll {
   background-color: var(--green-color);
   color: white;
 }
 
+.process {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.icons-list {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15px;
+}
+
+.icon-text {
+  font-size: 1.25rem;
+  color: var(--green-color);
+}
+
+.bottom-banner {
+  display: flex;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  z-index: 0;
+}
+
+.banner-overlay {
+  z-index: 10;
+  width: 24%;
+  margin: 50px;
+  text-align: left;
+  color: white;
+  align-self: center;
+}
+
+.title-banner {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.sub-title-banner p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+  color: var(--body-color);
 }
 
 ul {

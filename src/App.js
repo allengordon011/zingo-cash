@@ -1,55 +1,74 @@
 import React, { Component } from 'react';
+import { StickyContainer, Sticky } from 'react-sticky';
 import './App.css';
-import sprite from './img/Zingo-Cash-sprite.png';
+import Header from './Header.js'
 import facebook from './img/FB-f-Logo__blue_72.png';
+import hero from './img/zingocash_heroimage.jpg';
+import banner from './img/zingocash_image.jpg';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <div className="top-header">
-            <ul id="top-header-list">
-              <li>
-                <a href="" className="login">LOGIN</a>
-              </li>
-              <li>
-                <p className="phone">CALL US  1-888-ZINGO-55</p>
-              </li>
-              <li>
-                <a href=""><img src={facebook} className="facebook" alt="facebook"/></a>
-              </li>
-            </ul>
+        <StickyContainer>
+          <Sticky>
+          {
+          ({
+            style,
+            isSticky,
+            wasSticky,
+            distanceFromTop,
+            distanceFromBottom,
+            calculatedHeight
+          }) => {
+            return (
+                <Header />
+            )
+          }
+          }
+          </Sticky>
+
+          <div className="main">
+            <div className="main-hero">
+              <img src={hero} className="hero" alt="hero" />
+              <div className="hero-overlay">
+                <h1 className="title">We offer Loans for Bad Credit</h1>
+                <p className="sub-title">We specialize in loans for people with bad credit. Get a loan with Zingo Cash's quick loan process.</p>
+                <button className="enroll">ENROLL TODAY</button>
+              </div>
+            </div>
+            <div className="process">
+              <h2>OUR CASH PROCESS</h2>
+              <ul className="icons-list">
+                <li>
+                  <div className="icon-enroll" alt="icon-enroll" />
+                  <p className="icon-text">Enroll Today</p>
+                </li>
+                <li>
+                  <div className="icon-apply" alt="icon-apply" />
+                  <p className="icon-text">Apply Online</p>
+                </li>
+                <li>
+                  <div className="icon-verification" alt="icon-verification" />
+                  <p className="icon-text">Verification</p>
+                </li>
+                <li>
+                  <div className="icon-zingocash" alt="icon-zingocash" />
+                  <p className="icon-text">Zingo Cash!</p>
+                </li>
+              </ul>
+            </div>
+            <div className="bottom-banner">
+              <img src={banner} className="banner" alt="banner" />
+              <div className="banner-overlay">
+                <h1 className="title-banner">WE TRY TO HELP</h1>
+                <p className="sub-title-banner">Zingo Cash will work with you to find solutions to help you get past your current budget issues.</p>
+              </div>
+            </div>
+            <p style={{height:500}}> filler </p>
+
           </div>
-          <div className="logo-top" alt="logo" />
-          <nav className="main-nav">
-            <ul id="nav-list">
-              <li>
-                <a href="" className="second">INSTRUCTIONS</a>
-              </li>
-              <li>
-                <a href="" className="second">RATES & TERMS</a>
-              </li>
-              <li>
-                <a href="" className="second">LEARN MORE</a>
-              </li>
-              <li>
-                <a href="" className="second">CONTACT US</a>
-              </li>
-              <li>
-                <a href="" className="second">FAQ</a>
-              </li>
-              <li>
-                <button className="second">APPLY TODAY</button>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <div>
-          <h1 className="title">We offer Loans for Bad Credit</h1>
-          <p className="sub-title">We specialize in loans for people with bad credit. Get a loan with Zingo Cash's quick loan process.</p>
-          <button className="enroll">ENROLL TODAY</button>
-        </div>
+        </StickyContainer>
       </div>
     );
   }
