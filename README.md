@@ -1,9 +1,17 @@
-How many hours you worked –estimate is fine.
+# Zingo Cash Mock Up
 
-Which versions you used for HTML, CSS, JS.
+A design test created from scratch with Pixel Perfect web design based on a PSD.
 
-Which Responsive Framework you used (if any).
+![screenshot](/zingo-cash_screenshot.png?raw=true "Splash Page")
 
-What Operating system you used and Screen Resolution
+## Technology used
 
-Browser in which you tested work.
+* Create-React-App
+* JavaScript ES6
+* HTML5
+* CSS3
+* Sprite images
+
+### Lessons Learned
+
+* Starting with Bootstrap responsiveness grids/layout may have made things a little easier, especially with the NavBar.

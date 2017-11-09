@@ -1,6 +1,5 @@
 import React from 'react';
 import facebook from './img/FB-f-Logo__blue_72.png';
-import hero from './img/zingocash_heroimage.jpg';
 
 class Header extends React.Component {
     render() {

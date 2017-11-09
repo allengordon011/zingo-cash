@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Sticky from 'react-sticky-el';
 import './App.css';
 import Header from './Header.js'
-import facebook from './img/FB-f-Logo__blue_72.png';
 import hero from './img/zingocash_heroimage.jpg';
 import banner from './img/zingocash_image.jpg';
 
